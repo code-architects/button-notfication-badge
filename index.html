@@ -1,19 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Notification Badge | @code.architects</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title> Button Notification Badge | @code.architects</title>
-	<link rel="stylesheet" href="./style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-</head>
-
-<body>
-	<button class="btn">
-		<i class="fa fa-bell"></i>
-		<span class="badge">2</span>
-	</button>
-</body>
-
+  <body>
+    <button id="but" onclick="sub()">Subtract</button>
+    <button class="btn">
+      <i class="fa fa-bell"></i>
+      <span class="badge" id="bg"></span>
+    </button>
+    <br />
+    <br />
+    <button id="but" onclick="add()">Add</button>
+    <script>
+      var element = document.getElementById("bg");
+      function add() {
+        element.innerHTML++;
+      }
+      function sub() {
+        element.innerHTML--;
+      }
+    </script>
+  </body>
 </html>
