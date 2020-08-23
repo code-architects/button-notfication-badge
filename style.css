@@ -21,7 +21,10 @@ body {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 #but {
-  padding: 1rem 2rem;
+  padding: 0.8rem 1.6rem;
+  background: #abc;
+  border: 0;
+  
 }
 .badge {
   position: absolute;
